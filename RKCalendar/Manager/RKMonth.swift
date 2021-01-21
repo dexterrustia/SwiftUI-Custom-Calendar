@@ -35,21 +35,33 @@ struct RKMonth: View {
                         monthShowing-=1
                     }
                     print("monthShowing =>",monthShowing)
-                },label: {Text("<-").bold()})
+                },label: {
+                    Image(systemName: "chevron.backward")
+                        .imageScale(.small)
+                        .foregroundColor(.black)
+                })
                 Spacer()
-                Text(getMonthHeader()).foregroundColor(self.rkManager.colors.monthHeaderColor)
+                Text(getMonthHeader())
+                    .foregroundColor(self.rkManager.colors.monthHeaderColor)
+                    .bold()
                 Spacer()
                 Button(action: {
                     if monthShowing < 12 {
                         monthShowing+=1
                     }
                     print("monthShowing =>",monthShowing)
-                }, label: { Text("->").bold() })
-            }.padding(.horizontal,15)
+                }, label: {
+                    Image(systemName: "chevron.forward")
+                        .imageScale(.small)
+                        .foregroundColor(.black)
+                })
+            }
+            .padding(.horizontal,15)
+            .padding(.horizontal,20)
             
-            Divider()
+//            Divider()
             RKWeekdayHeader(rkManager: self.rkManager)
-            Divider()
+//            Divider()
             VStack(alignment: .leading, spacing: 5) {
                 ForEach(monthsArray, id:  \.self) { row in
                     HStack() {

@@ -24,6 +24,7 @@
 		019D282422DBCCC00001C990 /* demo-app-dark-mode-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282022DBCCC00001C990 /* demo-app-dark-mode-1.png */; };
 		019D282922DBCD2E0001C990 /* demo-app-light-mode-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282722DBCD2E0001C990 /* demo-app-light-mode-1.png */; };
 		019D282A22DBCD2E0001C990 /* demo-app-light-mode-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282822DBCD2E0001C990 /* demo-app-light-mode-2.png */; };
+		80C1C74A25B9815E00642EBB /* MyCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1C74925B9815D00642EBB /* MyCalendar.swift */; };
 		80D7EE1C25B83DE50067F3EA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D7EE1B25B83DE40067F3EA /* Colors.swift */; };
 		C72D24C62317A99D00A37CC1 /* RKColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72D24C52317A99D00A37CC1 /* RKColorSettings.swift */; };
 		C7A3D61B23126E230065D6FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7A3D61A23126E230065D6FF /* README.md */; };
@@ -49,6 +50,7 @@
 		019D282022DBCCC00001C990 /* demo-app-dark-mode-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-dark-mode-1.png"; sourceTree = "<group>"; };
 		019D282722DBCD2E0001C990 /* demo-app-light-mode-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-light-mode-1.png"; sourceTree = "<group>"; };
 		019D282822DBCD2E0001C990 /* demo-app-light-mode-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-light-mode-2.png"; sourceTree = "<group>"; };
+		80C1C74925B9815D00642EBB /* MyCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendar.swift; sourceTree = "<group>"; };
 		80D7EE1B25B83DE40067F3EA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C72D24C52317A99D00A37CC1 /* RKColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKColorSettings.swift; sourceTree = "<group>"; };
 		C7A3D61A23126E230065D6FF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				0112FD7522DB954900BB8F94 /* RKViewController.swift */,
 				0112FD6F22DB91DB00BB8F94 /* RKManager.swift */,
 				C72D24C52317A99D00A37CC1 /* RKColorSettings.swift */,
+				80C1C74925B9815D00642EBB /* MyCalendar.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				0112FD7422DB926A00BB8F94 /* RKMonth.swift in Sources */,
 				C72D24C62317A99D00A37CC1 /* RKColorSettings.swift in Sources */,
 				0112FD5722DB8D6800BB8F94 /* SceneDelegate.swift in Sources */,
+				80C1C74A25B9815E00642EBB /* MyCalendar.swift in Sources */,
 				0112FD6A22DB8EA800BB8F94 /* RKDate.swift in Sources */,
 				0112FD5922DB8D6800BB8F94 /* ContentView.swift in Sources */,
 				0112FD7622DB954900BB8F94 /* RKViewController.swift in Sources */,

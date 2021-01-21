@@ -25,13 +25,16 @@ struct RKViewController: View {
             Group {
                 ForEach(monthShowing-1..<monthShowing,id: \.self) { index in
                     RKMonth(
-                        isPresented: self.$isPresented,
+                        isPresented: .constant(true),//self.$isPresented,
                         monthShowing: $monthShowing,
                         rkManager: self.rkManager, monthOffset: index
                     )
                 }
             }
+            
+            Button(action: { self.isPresented.toggle()}, label: {Text("DONE")})
             Spacer()
+            
         }.padding(.top,10)
         
     }

@@ -18,10 +18,10 @@ struct RKCell: View {
     
     var body: some View {
         Text(rkDate.getText())
-            .fontWeight(rkDate.getFontWeight())
+//            .fontWeight(rkDate.getFontWeight())
             .foregroundColor(rkDate.getTextColor())
             .frame(width: cellWidth, height: cellWidth)
-            .font(.system(size: 20))
+            .font(.system(size: 15))
             .background(rkDate.getBackgroundColor())
             .cornerRadius(cellWidth/2)
 //            .cornerRadius(isSelected! ? cellWidth/2 : 0)

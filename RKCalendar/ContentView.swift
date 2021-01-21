@@ -15,8 +15,6 @@ struct ContentView : View {
     
      
     @ObservedObject var rkManager2 = RKManager(calendar: Calendar.current, minimumDate: Date(), maximumDate: Date().addingTimeInterval(60*60*24*365), mode: 1) // automatically goes to mode=2 after start selection, and vice versa.
-    
-     
     var currentDate = Date()
     let calendar = Calendar.current
     
@@ -43,7 +41,7 @@ struct ContentView : View {
                 Text("RESULT============")
             }
             
-        }.onAppear(perform: startUp)
+        }
             .navigationViewStyle(StackNavigationViewStyle())
     }
     
@@ -56,29 +54,7 @@ struct ContentView : View {
             }
         }.padding(.horizontal, 15)
     }
- 
-    func startUp() {
-        
-        // example of pre-setting selected dates
-//        let testOnDates = [Date().addingTimeInterval(60*60*24), Date().addingTimeInterval(60*60*24*2)]
-//        rkManager3.selectedDates.append(contentsOf: testOnDates)
-//
-//        // example of some foreground colors
-//        rkManager3.colors.weekdayHeaderColor = Color.blue
-//        rkManager3.colors.monthHeaderColor = Color.green
-//        rkManager3.colors.textColor = Color.blue
-//        rkManager3.colors.disabledColor = Color.red
-//
-//        // example of pre-setting disabled dates
-//        let testOffDates = [
-//            Date().addingTimeInterval(60*60*24*4),
-//            Date().addingTimeInterval(60*60*24*5),
-//            Date().addingTimeInterval(60*60*24*7)]
-//        rkManager4.disabledDates.append(contentsOf: testOffDates)
-    }
-    
     func getTextFromDate(date: Date!) -> String {
-        print("date =>",date)
         let formatter = DateFormatter()
         formatter.locale = .current
         formatter.dateFormat = "EEEE, MMMM d, yyyy"
